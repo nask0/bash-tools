@@ -1,0 +1,13 @@
+#!/bin/env bash
+
+cd /var/www/html/projects/svn/cartierpresse/branches/visuals-basket/library
+exec ctags -f ~/.vim/tags/cartier.tags \
+-h \".php\" -R \
+--exclude=\"\.svn\" \
+--totals=yes \
+--recurse=yes \
+--tag-relative=yes \
+--PHP-kinds=+cf \
+--regex-PHP='/abstract class ([^ ]*)/\1/c/' \
+--regex-PHP='/interface ([^ ]*)/\1/c/' \
+--regex-PHP='/(public |static |abstract |protected |private )+function ([^ (]*)/\2/f/'

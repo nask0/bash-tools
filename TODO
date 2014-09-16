@@ -1,0 +1,3 @@
+TODO :
+    - add script for un-pack/zip files according to filetype (.tar.bz2, .zip, etc.)
+    - add script to check if process exists by name (e.g. something like "ps aux | grep -i <process>" or something
